@@ -27,6 +27,8 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "description": "A fun summer project, where the users music is determined by their location. ",
+    "githubUrl": "https://github.com/krishangpatney/location-musica/tree/Feature_React_Native"
   }
 }
