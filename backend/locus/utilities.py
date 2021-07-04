@@ -1,6 +1,3 @@
+from geolib import geohash
 
-# Takes in Long, lat, resolution and does stuff 
-
-zoom_level = 8
-
-def encode(): 
+print(geohash.encode('70.2995', '-27.9993', 7))
