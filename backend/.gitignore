@@ -1,0 +1,6 @@
+env/
+
+.env
+db.sqlite3
+
+secrets.txt
