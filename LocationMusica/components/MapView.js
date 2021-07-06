@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-
+import GeocodeView from './GeocodeView';
 
 export default function MapView(props) {
     return (
@@ -8,6 +8,7 @@ export default function MapView(props) {
             <Text>
                 {props.latitude + ' ' + props.longitude}
             </Text>
+            <GeocodeView latitude={props.latitude} longitude={props.longitude} > </GeocodeView>
         </View>
     );
 }
