@@ -1,14 +1,13 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import ReactPlayer from 'react-player';
 
-
-export default function MapView(props) {
+export default function PlayerView(props) {
     return (
-        <View style={styles.container}>
-            <Text>
-                {props.latitude + ' ' + props.longitude}
-            </Text>
-        </View>
+        // Render a YouTube video player
+        <ReactPlayer 
+            url='https://www.youtube.com/watch?v=ysz5S6PUM-U'
+            />
     );
 }
 

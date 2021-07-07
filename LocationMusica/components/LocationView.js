@@ -7,6 +7,7 @@ import * as Location from 'expo-location';
 
 
 export default function LocationView() {
+
     const [location, setLocation] = useState(null);
     const [errorMsg, setErrorMsg] = useState(null);
 
@@ -32,8 +33,10 @@ export default function LocationView() {
     let text = 'Waiting..';
     let long = '';
     let lat = '';
+    
     // { "coords": { "latitude": 25.2747985, "longitude": 55.3685112, "altitude": null, "accuracy": 25, 
     //      "altitudeAccuracy": null, "heading": null, "speed": null }, "timestamp": 1625357922586 }
+
     if (errorMsg) {
         text = errorMsg;
         return (
